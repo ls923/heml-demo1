@@ -408,19 +408,34 @@
     var emp = {
       id: 1,
       name: "ls",
-      printInfo() {
-        console.log("Name:" + this.name);
-      },
-      department: {
-        name: "jsb",
-        printInfo() {
-          console.log("Part Name:" + this.name);
-        },
-      },
+      //   printInfo() {
+      //     console.log("Name:" + this.name);
+      //   },
+      //   department: {
+      //     name: "jsb",
+      //     printInfo() {
+      //       console.log("Part Name:" + this.name);
+      //     },
+      //   },
     };
-    emp.printInfo(); // Name:ls
-    emp.department.printInfo(); // Part Name:jsb
+    // emp.printInfo(); // Name:ls
+    // emp.department.printInfo(); // Part Name:jsb
 
-    function printInfo()
+    function printInfo(dep1, dep2, dep3) {
+      console.log("员工姓名:" + this.name, dep1, dep2, dep3);
+    }
+    printInfo.call(emp, "a", "b", "c"); // 员工姓名:ls a b c
+    printInfo.apply(emp, ["d", "e", "f"]); // 员工姓名:ls d e f
+    printInfo.bind(emp, "g", "h", "i")(); // 员工姓名:ls g h i
+    console.clear();
+
+    // RegExp
+    var str = "where when what";
+    var re = /wh/g;
+    var re2 = new RegExp("wh");
+    console.log(re.exec(str));
+    console.log(re.exec(str));
+    console.log(re.exec(str)); //["wh", index: 0, input: "where is when and what", groups: undefined]
+    console.log(re.test(str)); //true
   </script>
 </html>
