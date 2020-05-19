@@ -12,34 +12,41 @@
 <body>
     <div class="wrapper">
         <div class="header">
-            <div class="wave">
-                <h2>简历</h2>
-                <div class="whoIAm">
-                    <div>
-                        个人信息
-                    </div>
-                    <div>
-                        <dl>
-                            <dd>
-                                <div>性别:<span>男</span></div>
-                            </dd>
-                            <dd>
-                                <div>年龄:<span>22 岁(1998 年 9 月)</span></div>
-                            </dd>
-                            <dd>
-                                <div>手机:<span>15797901860</span></div>
-                            </dd>
-                            <dd>
-                                <div>E-mail:<span>83816707@qq.com</span></div>
-                            </dd>
-                        </dl>
-                    </div>
+            <svg viewBox="0 0 200 100 " id="chart">
+                <g transform="translate(0,100) scale(1,-1)">
+                    <path fill="none" stroke-width="3" stroke-linecap="round" stroke-linejion="round" id="line"
+                        d="M20,20 40,40 60,20 80,40"></path>
+                </g>
+
+            </svg>
+        </div>
+        <div class="wave">
+            <h2>简历</h2>
+            <div class="whoIAm content">
+                <div>
+                    个人信息
+                </div>
+                <div>
+                    <dl>
+                        <dd>
+                            <div>性别:<span>男</span></div>
+                        </dd>
+                        <dd>
+                            <div>年龄:<span>22 岁(1998 年 9 月)</span></div>
+                        </dd>
+                        <dd>
+                            <div>手机:<span>15797901860</span></div>
+                        </dd>
+                        <dd>
+                            <div>E-mail:<span>83816707@qq.com</span></div>
+                        </dd>
+                    </dl>
                 </div>
             </div>
-
         </div>
+
         <div class="container">
-            <div class="education">
+            <div class="education content">
                 <div>
                     教育背景
                 </div>
@@ -66,7 +73,7 @@
                     </dl>
                 </div>
             </div>
-            <div class="experience">
+            <div class="experience content">
                 <div>实习经历</div>
                 <div>
                     <dl>
@@ -96,7 +103,7 @@
                 </div>
 
             </div>
-            <div class="JobIntention">
+            <div class="JobIntention content">
                 <div>求职意向</div>
                 <div>
                     <dl>
@@ -110,7 +117,7 @@
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project content">
                 <div>项目经历</div>
                 <div>
                     <dl>
@@ -144,28 +151,13 @@
 
 </body>
 <script>
-    // function Point(x, y) {
-    //     this.x = x;
-    //     this.y = y;
-    // }
-    // Point.prototype.toString = function () {
-    //     return '(' + this.x + ', ' + this.y + ')';
-    // };
-    // const p = new Point(1, 2);
-    // console.log(p.toString()); // (1,2)
+    var role = prompt("good", "hint");
+    if (role == 'y') {
+        alert("Y");
 
-    // class Point {
-    //     constructor(x, y) {
-    //         this.x = x;
-    //         this.y = y;
-    //     }
-
-    //     toString() {
-    //         return '(' + this.x + ', ' + this.y + ')';
-    //     }
-    // }
-    // let p = new Point(2, 3);
-    // console.log(p.toString()); //(2, 3)
+    } else {
+        alert("N");
+    }
 </script>
 
 </html>

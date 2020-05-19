@@ -35,14 +35,17 @@ dl dd div span {
     /* overflow: hidden; */
 }
 
-.wave {
-    padding: 15px;
-    height: inherit;
+.wave {}
 
-    background-color: rgba(118, 218, 255, 0.1);
-    border-radius: 5px;
+#chart {
+    background: #f6f6f6;
+    width: 100%;
 }
 
+#chart #line {
+    stroke: #9f3af0;
+
+}
 
 @keyframes roate {
     0% {
@@ -71,8 +74,15 @@ dl dd div span {
     padding: 0
 }
 
+.content {
+    padding: 15px;
+
+    background-color: rgba(118, 218, 255, 0.1);
+    border-radius: 5px;
+}
+
 .container {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     height: 60vh;
 }
 
